@@ -15,9 +15,9 @@ while True:
     input = raw_input("You: ")
     response = k.respond(input)
     # print out on the shell
-    print response
+    print "Hal9k:" + response
     # and as speech
-    subprocess.Popen("~/I2C-1602-LCD/print.py " + response, shell=True)
+    subprocess.Popen("I2C-1602-LCD/printq.py " + response, shell=True)
 	#os.system("~/I2C-1602-LCD/print.py test1 test2")
 	#os.system("script2.py 1")
 	#print commands.getoutput("/usr/bin/espeak -v en+f4 -p 99 -s 160 \"" + response + "\"")
